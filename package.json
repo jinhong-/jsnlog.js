@@ -34,8 +34,8 @@
       "jsnlog.js.map",
       "jsnlog.js"
     ]
-  }
-  "jspm":{
+  },
+  "jspm": {
   	"format": "cjs"
   }
 }
