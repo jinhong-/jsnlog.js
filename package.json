@@ -35,4 +35,7 @@
       "jsnlog.js"
     ]
   }
+  "jspm":{
+  	"format": "cjs"
+  }
 }
