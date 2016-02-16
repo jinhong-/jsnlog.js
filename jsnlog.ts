@@ -11,6 +11,9 @@ import JSNLogLoggerOptions = JSNLog.JSNLogLoggerOptions
 import JSNLogOptions = JSNLog.JSNLogOptions
 import JSNLogStatic = JSNLog.JSNLogStatic
 
+declare var exports: any;
+declare var define: any;
+
 function JL(loggerName?: string): JSNLogLogger
 {
     // If name is empty, return the root logger
@@ -953,16 +956,12 @@ module JL
 }
     
 // Support CommonJS module format 
-
-var exports: any;
 if (typeof exports !== 'undefined')
 {
     exports.JL = JL;
 }
 
 // Support AMD module format
-
-var define: any;
 if (typeof define == 'function' && define.amd)
 {
     define('jsnlog', [], function () {
