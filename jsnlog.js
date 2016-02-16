@@ -860,7 +860,7 @@ if (typeof exports !== 'undefined') {
 }
 
 // Support AMD module format
-var define;
+//var define;
 if (typeof define == 'function' && define.amd) {
     define('jsnlog', [], function () {
         return JL;
